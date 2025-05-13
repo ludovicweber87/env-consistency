@@ -6,15 +6,16 @@ on:
       - main
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: write       # pour modifier package.json & CHANGELOG.md
+  pull-requests: write  # pour créer / mettre à jour la PR
 
 jobs:
   release:
-    name: Create / Update Release PR
+    name: Create or Update Release PR
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -23,6 +24,7 @@ jobs:
           node-version: '20'
 
       - name: Create or Update Release PR
+        id: release
         uses: googleapis/release-please-action@v4
         with:
           release-type: node
