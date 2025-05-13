@@ -79,7 +79,7 @@
                         type: "confirm",
                         name: "add",
                         message: `Add missing keys to ${fileName}?`,
-                        default: false,
+                        default: true,
                     },
                 ]);
                 if (add) {
