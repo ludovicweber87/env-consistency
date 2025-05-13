@@ -1,30 +1,24 @@
-# .github/workflows/release-please.yml
 name: Release Please
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 permissions:
   contents: write
   pull-requests: write
+  issues: write      # ← needed to let the action create its labels
 
 jobs:
   release:
-    name: Create / Update Release PR
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
       - name: Create or Update Release PR
-        id: release
         uses: googleapis/release-please-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
