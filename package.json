@@ -19,5 +19,10 @@
   "dependencies": {
     "dotenv": "^16.5.0",
     "inquirer": "^9.3.7"
+  },
+  "release-please": {
+    "release-type": "node",
+    "package-name": "env-consistency",
+    "bump-minor-pre-major": false
   }
 }
