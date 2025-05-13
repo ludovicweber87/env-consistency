@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/ludovicweber87/env-consistency/compare/v1.0.0...v1.1.0) (2025-05-13)
+
+
+### Features
+
+* update package.json and env-consistency-init.js ([80f3d03](https://github.com/ludovicweber87/env-consistency/commit/80f3d03e6c3f826ae807de3d1d7c6f663e0d3944))
+* update package.json and env-consistency-init.js ([32376b4](https://github.com/ludovicweber87/env-consistency/commit/32376b453d66238cfca2c043ea08d12746fb0ac4))
+
 ## [1.0.0](https://github.com/ludovicweber87/env-consistency/compare/v1.0.1...v1.0.0) (2025-05-13)
 
 
