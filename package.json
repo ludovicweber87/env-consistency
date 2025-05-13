@@ -6,9 +6,6 @@
   "bin": {
     "env-consistency-init": "./bin/env-consistency-init.js"
   },
-  "scripts": {
-    "test": "jest"
-  },
   "keywords": [
     "env",
     "dotenv",
