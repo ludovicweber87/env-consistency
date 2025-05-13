@@ -1,4 +1,4 @@
-# env-consistency-check
+# env-consistency
 
 > A CLI tool to ensure your `.env.*` files are consistent with a reference, all via a simple `npx` command.
 
@@ -6,7 +6,7 @@
 
 When you have multiple environment files (e.g., `.env.local`, `.env.staging`, `.env.production`), it's easy for keys to get out of sync. Missing or extra variables can cause bugs that only appear in specific environments.
 
-**env-consistency-check** helps by:
+**env-consistency** helps by:
 
 -   **Comparing** selected `.env.*` files against a reference (`.env.dist` by default).
 -   **Reporting** missing or extra keys in each file.
@@ -19,7 +19,7 @@ When you have multiple environment files (e.g., `.env.local`, `.env.staging`, `.
 No install required! Run directly with `npx`:
 
 ```bash
-npx env-consistency-check
+npx env-consistency
 ```
 
 This will download and execute the latest version of the tool.
@@ -29,7 +29,7 @@ This will download and execute the latest version of the tool.
 Simply run:
 
 ```bash
-npx env-consistency-check
+npx env-consistency
 ```
 
 You'll be prompted to:
@@ -51,8 +51,8 @@ On completion, it exits with:
 ## 🚀 Example Session
 
 ```bash
-$ npx env-consistency-check
-🔧 env-consistency-check starting…
+$ npx env-consistency
+🔧 env-consistency starting…
 ? Which .env files do you want to check? › ◉ local ◯ staging ◯ production
 ? Reference file to compare against: (.env.dist)
 
@@ -74,7 +74,7 @@ Use in your CI pipeline to fail builds on env mismatches:
 
 ```yaml
 - name: Check env consistency
-  run: npx env-consistency-check
+  run: npx env-consistency
 ```
 
 ## 🤝 Contributing & Support
@@ -83,4 +83,4 @@ Contributions welcome! Open an issue or PR on the GitHub repo.
 
 ---
 
-_Published via [env-consistency-check](https://www.npmjs.com/package/env-consistency-check)_
+_Published via [env-consistency](https://www.npmjs.com/package/env-consistency)_
