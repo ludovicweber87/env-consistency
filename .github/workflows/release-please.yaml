@@ -23,7 +23,7 @@ jobs:
           node-version: '20'
 
       - name: Create or Update Release PR
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         with:
           release-type: node
           package-name: env-consistency
