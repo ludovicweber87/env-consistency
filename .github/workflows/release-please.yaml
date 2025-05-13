@@ -1,9 +1,9 @@
+# .github/workflows/release-please.yml
 name: Release Please
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 permissions:
   contents: write
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -25,8 +25,9 @@ jobs:
 
       - name: Create or Update Release PR
         id: release
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
-          package-name: env-consistency
+          path: .
+          target-branch: main

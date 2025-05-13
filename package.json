@@ -21,8 +21,8 @@
     "inquirer": "^9.3.7"
   },
   "release-please": {
-    "release-type": "node",
-    "package-name": "env-consistency",
-    "bump-minor-pre-major": false
+    "releaseType": "node",
+    "packageName": "env-consistency",
+    "bumpMinorPreMajor": false
   }
 }
