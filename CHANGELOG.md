@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ludovicweber87/env-consistency/compare/v1.1.0...v1.0.1) (2025-05-13)
+
+
+### Features
+
+* release 1.0.1 ([cbb1c7b](https://github.com/ludovicweber87/env-consistency/commit/cbb1c7b183420e468cb75fd41fb2e65399ce8ff7))
+
 ## [1.1.0](https://github.com/ludovicweber87/env-consistency/compare/v1.0.0...v1.1.0) (2025-05-13)
 
 
