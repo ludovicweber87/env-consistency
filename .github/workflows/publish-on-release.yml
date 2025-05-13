@@ -1,5 +1,6 @@
 name: Publish to npm
 
+# Se déclenche quand GitHub publie une Release (après le merge de la PR)
 on:
   release:
     types: [ published ]
@@ -12,16 +13,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1) Récupère le code taggé
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js & auth
+      # 2) Installe Node et configure npm
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Publish to npm
-        run: npm publish
+      # 3) Publie sur npm
+      - name: Publish package to npm
+        run: |
+          npm ci
+          npm publish
         env:
+          # Ton token npm (doit avoir le droit publish)
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
