@@ -1,0 +1,23 @@
+{
+  "name": "env-consistency",
+  "version": "1.0.0",
+  "description": "Ensure consistency across .env files based on a reference file.",
+  "main": "lib/index.js",
+  "bin": {
+    "env-consistency-init": "./bin/env-consistency-init.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "consistency"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "inquirer": "^9.3.7"
+  }
+}
