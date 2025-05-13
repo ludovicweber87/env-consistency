@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/ludovicweber87/env-consistency/compare/v1.0.3...v1.1.0) (2025-05-13)
+
+
+### Features
+
+* remove node modules ([8e2fd6b](https://github.com/ludovicweber87/env-consistency/commit/8e2fd6be8a7395e188518a6b7e7d89104bc1e634))
+
+
+### Miscellaneous Chores
+
+* release 1.1.0 ([f68d2ad](https://github.com/ludovicweber87/env-consistency/commit/f68d2ade477a847564ae679ca7e3c4f1978dd799))
+
 ## [1.0.3](https://github.com/ludovicweber87/env-consistency/compare/v1.0.2...v1.0.3) (2025-05-13)
 
 
