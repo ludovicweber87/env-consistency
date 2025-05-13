@@ -1,6 +1,6 @@
 {
   "name": "env-consistency",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ensure consistency across .env files based on a reference file.",
   "main": "lib/index.js",
   "bin": {
