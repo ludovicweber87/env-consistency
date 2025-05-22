@@ -6,6 +6,8 @@
 
 When you have multiple environment files (e.g., `.env.local`, `.env.staging`, `.env.production`), it's easy for keys to get out of sync. Missing or extra variables can cause bugs that only appear in specific environments.
 
+> ⚠️ **Note**: All `.env.*` files must be located in the root directory of your project for the tool to work properly.
+
 **env-consistency** helps by:
 
 -   **Comparing** selected `.env.*` files against a reference (`.env.dist` by default).
